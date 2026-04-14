@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | João Vitor Coutinho</title>
+    <!-- Ligação com o arquivo CSS externo -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Ícones Phosphor (Para o botão de tema e Redes Sociais) -->
+    <script src="https://unpkg.com/@phosphor-icons/Web"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">JV<span>Coutinho</span></div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Botão para alternar tema -->
+        <button id="theme-toggle" aria-label="Alternar Tema Escuro/Claro">
+            <i class="ph ph-moon"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- Secção Hero: Impacto Inicial -->
+        <section id="hero">
+            <canvas id="matrix-bg"></canvas>
+            <div class="hero-content">
+                <h1>Desenvolvedor Web em Formação</h1>
+                <p>Unindo análise corporativa com desenvolvimento full-stack para criar soluções eficientes.</p>
+                <div class="btns">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="https://github.com/jvcoutinhoa" target="_blank" class="btn-secondary">Acessar GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Sobre Mim -->
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <div class="sobre-grid">
+                <img src="vignoli.jpg" alt="Foto de João Vitor" onerror="this.src='[https://placehold.co/400x400/2563eb/white?text=Joao+Vitor](https://placehold.co/400x400/2563eb/white?text=Joao+Vitor)'">
+                
+                <div class="sobre-texto">
+                    <p>Sou um profissional de 29 anos, focado, casado e pai de uma menina de 2 meses. Nesta nova fase da vida, estou em busca de uma fonte de renda remota ou híbrida que me possa dar estabilidade, crescimento a longo prazo e qualidade de vida.</p>
+                    <p>Atualmente, estou em imersão total nos estudos práticos de desenvolvimento web e programação, focando os meus conhecimentos na transição de carreira para a área de Tecnologia.</p>
+                    <p>O meu objetivo é unir a minha vasta bagagem analítica corporativa com as novas habilidades técnicas que venho estudando e aperfeiçoando a cada dia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção: Habilidades -->
+        <section id="skills">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3 / Responsivo</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React (Estudando)</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Lógica de Programação</span>
+            </div>
+        </section>
+
+        <!-- Secção Projetos -->
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container">
+                <article class="card-projeto">
+                    <h3>Projeto 01 - E-commerce</h3>
+                    <p>Uma loja virtual focada em interface limpa e organização visual, desenvolvida inteiramente com HTML e CSS.</p>
+                    <a href="https://github.com/jvcoutinhoa?tab=repositories" target="_blank" class="link-projeto">Ver no Github</a>
+                </article>
+            
+                <article class="card-projeto">
+                    <h3>Projeto 02 - Planner Baby</h3>
+                    <p>Aplicação pessoal focada em rastrear a rotina e os cuidados diários de recém-nascidos. (Em desenvolvimento)</p>
+                    <a href="#" class="link-projeto disabled">Aguardando Lançamento</a>
+                </article>
+
+                <article class="card-projeto">
+                    <h3>Projeto 03 - Portfólio</h3>
+                    <p>Portfólio profissional para apresentação de projetos, desenhado com foco em design responsivo e UI/UX modernos.</p>
+                    <a href="https://github.com/jvcoutinhoa?tab=repositories" target="_blank" class="link-projeto">Ver no Github</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secção Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Ex: João Vitor" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail Profissional:</label>
+                    <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="msg">Como posso ajudar?</label>
+                    <textarea id="msg" placeholder="Escreva aqui a sua mensagem ou proposta..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Secção: Redes Sociais -->
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/jvcoutinhoa/" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://github.com/jvcoutinhoa?tab=repositories" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+            <a href="https://www.instagram.com/jvcoutinhoa/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.facebook.com/jvcoutinhoa" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+        </div>
+        <p>&copy; 2026 - João Vitor Coutinho. Construído com dedicação e foco no futuro.</p>
+    </footer>
+
+    <!-- Ligação com o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
