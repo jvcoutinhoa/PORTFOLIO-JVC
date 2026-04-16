@@ -1,8 +1,5 @@
-/* =========================================
-   1. VARIÁVEIS DE COR (TEMA CLARO E ESCURO)
-   ========================================= */
+
 :root {
-    /* Tema Claro (Padrão) */
     --primary-color: #2563eb;
     --primary-hover: #1d4ed8;
     --secondary-color: #64748b;
@@ -18,7 +15,6 @@
 }
 
 body.dark-theme {
-    /* Tema Escuro (Ativado pelo botão) */
     --primary-color: #3b82f6;
     --primary-hover: #60a5fa;
     --secondary-color: #94a3b8;
@@ -32,9 +28,6 @@ body.dark-theme {
     --hero-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
-/* =========================================
-   2. ESTILOS GERAIS
-   ========================================= */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -51,9 +44,7 @@ section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; }
 h2 { text-align: center; font-size: 2.2rem; margin-bottom: 50px; position: relative; }
 h2::after { content: ''; display: block; width: 60px; height: 4px; background: var(--primary-color); margin: 12px auto 0; border-radius: 2px; }
 
-/* =========================================
-   3. CABEÇALHO E BOTÃO DE TEMA
-   ========================================= */
+
 header {
     position: sticky; top: 0; z-index: 100;
     background-color: var(--header-bg);
@@ -80,19 +71,16 @@ nav a:hover { color: var(--primary-color); }
 }
 #theme-toggle:hover { color: var(--primary-color); transform: scale(1.1); }
 
-/* =========================================
-   4. SECÇÕES (HERO, SOBRE, PROJETOS, CONTATO)
-   ========================================= */
 #hero {
-    position: relative; /* Necessário para o Canvas do Matrix ficar atrás */
+    position: relative; 
     overflow: hidden;
     min-height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center;
-    background-color: var(--light-bg); /* Fundo base (será coberto pelo canvas) */
+    background-color: var(--light-bg); 
     width: 100%; max-width: 100%; padding: 0 5%;
     transition: background-color 0.3s ease;
 }
 
-/* Estilos do Canvas Matrix (O Fundo Animado) */
+
 #matrix-bg {
     position: absolute;
     top: 0;
@@ -103,11 +91,11 @@ nav a:hover { color: var(--primary-color); }
 }
 
 .hero-content {
-    position: relative; /* Coloca o texto na frente do Matrix */
+    position: relative; 
     z-index: 1; 
     max-width: 800px;
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px); /* Efeito de vidro mais forte */
+    backdrop-filter: blur(8px); 
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -119,7 +107,6 @@ body.dark-theme .hero-content {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* O texto do Hero recebe sombras para não se perder no fundo animado */
 .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
 .hero-content p { font-size: 1.2rem; color: var(--dark-color); margin-bottom: 40px; font-weight: 600; }
 
@@ -156,9 +143,7 @@ form textarea { resize: vertical; min-height: 150px; }
 form button { width: 100%; margin-top: 10px; padding: 18px; background-color: var(--primary-color); color: #ffffff; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: var(--transition); }
 form button:hover { background-color: var(--primary-hover); transform: translateY(-2px); }
 
-/* =========================================
-   5. RODAPÉ E REDES SOCIAIS
-   ========================================= */
+
 footer { text-align: center; padding: 40px; background-color: var(--white); color: var(--secondary-color); margin-top: 40px; border-top: 1px solid var(--border-color); transition: background-color 0.3s ease; }
 
 .redes-sociais { display: flex; justify-content: center; gap: 25px; margin-bottom: 20px; }
